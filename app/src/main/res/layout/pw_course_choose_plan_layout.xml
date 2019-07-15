@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menuview_layout"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/com_white"
+    android:gravity="center"
+    android:minHeight="120dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_to_myproject"
+        style="@style/text_33314_style"
+        android:text="查看我的项目" />
+
+    <TextView
+        android:id="@+id/tv_outlogin"
+        style="@style/text_org14_style"
+        android:layout_marginTop="30dp"
+        android:text="退出登录" />
+
+</LinearLayout>

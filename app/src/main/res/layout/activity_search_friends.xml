@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/com_white">
+
+        <RelativeLayout
+            android:id="@+id/serach_area"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:layout_toLeftOf="@+id/tv_cancel"
+            android:layout_toRightOf="@+id/area_left"
+            android:background="@drawable/rec_bg_stroke_bg_solid_corner5"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/edit_sousuo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="请输入用户昵称进行搜索"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:singleLine="true"
+                android:textColor="@color/g333333"
+                android:textColorHint="@color/gc0c0c0"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_sousuo"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/xiaosousuo" />
+
+            <ImageView
+                android:id="@+id/img_del"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_delete"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            style="@style/text_66615_style"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:text="取消" />
+
+        <View
+            style="@style/hline_fill_top"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nouser"
+        style="@style/text_66616_style"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="暂时没有这个用户"
+        android:visibility="gone"/>
+
+    <ListView
+        android:id="@+id/lv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/com_white"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:listSelector="#00000000" />
+
+    <LinearLayout
+        android:id="@+id/area_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/show_letter"
+            style="@style/text_66615_style"
+            android:layout_height="10dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/area_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/com_white"
+            android:paddingLeft="@dimen/com_border_margin"
+            android:paddingRight="@dimen/com_border_margin">
+
+            <ImageView
+                android:id="@+id/img_userface"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/img_default_h" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/img_userface"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/text_33315_style"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/user_qianming"
+                    style="@style/text_66613_style"
+                    android:layout_marginTop="3dp"
+                    android:text="小橙子妈·汤包·12岁·黄陂"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

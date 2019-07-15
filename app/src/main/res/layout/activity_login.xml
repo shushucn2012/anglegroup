@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="168dp">
+
+        <TextView
+            style="@style/text_33318_style"
+            android:layout_centerVertical="true"
+            android:text="登录"
+            android:textColor="@color/g202020"
+            android:textSize="22sp" />
+
+
+        <LinearLayout
+            android:id="@+id/area_goto_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/text_33314_style"
+                android:text="去注册"
+                android:textColor="@color/g202020"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="8dp"
+                android:src="@mipmap/icon_narrow1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_phone"
+        style="@style/edit_com_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="40dp"
+        android:hint="请输入手机号"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp" />
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_marginLeft="44dp"
+        android:layout_marginRight="44dp" />
+
+    <EditText
+        android:id="@+id/edit_pwd"
+        style="@style/edit_com_style"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin"
+        android:layout_marginTop="10dp"
+        android:hint="请输入登录密码"
+        android:inputType="textPassword"
+        android:maxLength="16"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp" />
+
+    <View
+        style="@style/hline_fill_top"
+        android:layout_marginLeft="@dimen/big_border_margin"
+        android:layout_marginRight="@dimen/big_border_margin" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_com_style"
+        android:layout_marginTop="50dp"
+        android:text="登录"/>
+
+</LinearLayout>

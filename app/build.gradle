@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "25.0.3"
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.asuper.angelgroup"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 9
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+    repositories {
+        flatDir {
+            dirs 'libs' //this way we can find the .aar file in libs folder
+        }
+    }
+}
+
+dependencies {
+    compile(name:'AlivcPlayer', ext:'aar')
+    compile(name:'AliyunVodPlayer', ext:'aar')
+    compile(name:'AliyunVodPlayerView', ext:'aar')
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    testCompile 'junit:junit:4.12'
+    compile project(':handmarklibrary')
+    compile project(path: ':multi-image-selector')
+    compile 'com.contrarywind:Android-PickerView:3.2.7'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'com.android.support:recyclerview-v7:26.+'
+    compile project(':mediapicker')
+    compile 'cjt.library.wheel:camera:1.1.9'
+    compile 'com.ms-square:expandableTextView:0.1.4'
+    compile 'com.github.promeg:tinypinyin:1.0.0'
+}

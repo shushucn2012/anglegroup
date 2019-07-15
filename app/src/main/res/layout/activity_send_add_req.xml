@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_righttext" />
+
+    <TextView
+        style="@style/text_66615_style"
+        android:layout_marginLeft="@dimen/com_border_margin"
+        android:layout_marginTop="18dp"
+        android:text="你需要发送验证申请，等待对方通过"/>
+
+    <EditText
+        android:id="@+id/edit_info"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/com_white"
+        android:gravity="top"
+        android:hint="输入你想说的话…"
+        android:maxLength="50"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:textColor="@color/g333333"
+        android:textColorHint="@color/gc0c0c0"
+        android:textSize="15sp" />
+
+</LinearLayout>

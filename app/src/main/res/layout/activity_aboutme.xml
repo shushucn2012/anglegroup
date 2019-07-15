@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_com" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="70dp"
+        android:src="@mipmap/app_logo_big" />
+
+    <TextView
+        android:id="@+id/tv_version"
+        style="@style/text_blue18_style"
+        android:textColor="@color/g202020"
+        android:layout_marginTop="10dp"
+        android:text="v1.0" />
+
+    <TextView
+        android:id="@+id/tv_company"
+        style="@style/text_66615_style"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:lineSpacingExtra="10dp"
+        android:text="心家，自闭症、唐氏综合征、脑瘫、发育迟缓等心智障碍特殊儿童父母的社交平台。来这里，找到你自己，共享育儿路上的痛与乐，成就宝贝价值。" />
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/com_white"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_child_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/rec_gray_stroke_trans_solid"
+        android:textColor="@color/gc0c0c0"
+        android:gravity="center"
+        android:text="小宝"
+        android:textSize="15sp" />
+
+</LinearLayout>

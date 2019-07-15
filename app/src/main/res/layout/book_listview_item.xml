@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/show_letter"
+            style="@style/text_66615_style"
+            android:layout_height="23dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/area_content"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/com_white"
+            android:paddingLeft="@dimen/com_border_margin"
+            android:paddingRight="@dimen/com_border_margin">
+
+            <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/userface"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="5dp"
+                app:riv_oval="false"
+                android:src="@drawable/icon_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/userface"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/username"
+                    style="@style/text_33315_style"
+                    android:singleLine="true"
+                    android:text="usernameusernameusernameusernameusernameusernameusernameusername" />
+
+                <TextView
+                    android:id="@+id/user_qianming"
+                    style="@style/text_66613_style"
+                    android:layout_marginTop="3dp"
+                    android:singleLine="true"
+                    android:text="小橙子妈·汤包·12岁·黄陂" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/bottom_line"
+            style="@style/hline_fill_top_margin"
+            android:layout_height="1dp" />
+
+    </LinearLayout>
+</LinearLayout>

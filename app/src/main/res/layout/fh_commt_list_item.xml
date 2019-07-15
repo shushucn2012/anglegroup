@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_area"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:background="#f6f6f8">
+
+    <!--<TextView
+        android:id="@+id/tv_user_name"
+        style="@style/text_33313_style"
+        android:textColor="@color/g646287"
+        android:text="123123"/>
+
+    <LinearLayout
+        android:id="@+id/area_repaly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/text_33313_style"
+            android:text=" 回复 " />
+
+        <TextView
+            android:id="@+id/tv_repaly_name"
+            style="@style/text_33313_style"
+            android:textColor="@color/g646287"
+            android:text="12313"/>
+    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/tv_comt_content"
+        style="@style/text_33314_style"
+        android:text="哎呀，我们加的小书童好认真啊！" />
+</LinearLayout>

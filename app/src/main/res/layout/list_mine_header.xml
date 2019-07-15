@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/img_bg"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/my_bg" />
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/img_user_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:scaleType="centerCrop"
+            android:src="@drawable/icon_image"
+            app:riv_border_color="@color/white"
+            app:riv_border_width="2dp"
+            app:riv_corner_radius="5dp"
+            app:riv_oval="false" />
+
+        <TextView
+            android:id="@+id/tv_resume"
+            style="@style/text_66613_style"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="13dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginRight="@dimen/com_border_margin"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            style="@style/text_fff16_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="100dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/img_user_head"
+            android:singleLine="true"
+            android:text=""
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_intro"
+            style="@style/text_fff14_style"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginRight="12dp"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/img_user_head"
+            android:text=""
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/area_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/com_border_margin"
+        android:gravity="right"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_add_focus"
+            style="@style/btn_small_style"
+            android:text="关注" />
+
+        <Button
+            android:id="@+id/btn_add_friend"
+            style="@style/btn_small_style"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/rec_gray_stroke_trans_solid_corner5"
+            android:text="添加好友"
+            android:textColor="@color/g333333" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

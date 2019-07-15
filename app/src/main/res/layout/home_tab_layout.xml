@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"></FrameLayout>
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View style="@style/hline_fill_top" />
+
+            <RadioGroup
+                android:id="@+id/main_group"
+                android:layout_width="fill_parent"
+                android:layout_height="49dp"
+                android:layout_gravity="bottom"
+                android:background="@color/com_white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="3dp">
+
+                <RadioButton
+                    android:id="@+id/radio_button_home"
+                    style="@style/main_tab_bottom"
+                    android:checked="true"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/xiaoxi_selector"
+                    android:text="家园"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_book"
+                    style="@style/main_tab_bottom"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/guzhang_selector"
+                    android:text="通讯录"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_find"
+                    style="@style/main_tab_bottom"
+                    android:drawablePadding="2dp"
+                    android:layout_marginLeft="50dp"
+                    android:drawableTop="@drawable/zhishiku_selector"
+                    android:text="发现"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_me"
+                    style="@style/main_tab_bottom"
+                    android:drawablePadding="2dp"
+                    android:drawableTop="@drawable/wode_selector"
+                    android:text="我的"
+                    android:textSize="10sp" />
+            </RadioGroup>
+        </LinearLayout>
+    </TabHost>
+    
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:src="@mipmap/icon_tab_add"/>
+</RelativeLayout>

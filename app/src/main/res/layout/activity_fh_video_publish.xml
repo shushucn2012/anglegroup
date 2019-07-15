@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/topbar_righttext" />
+
+    <EditText
+        android:id="@+id/edit_input_word"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/com_white"
+        android:gravity="top"
+        android:hint="这一刻的想法..."
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin"
+        android:paddingTop="10dp"
+        android:textColor="@color/g333333"
+        android:textColorHint="@color/gc0c0c0"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/com_white"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="@dimen/com_border_margin"
+            android:layout_marginTop="10dp"
+            android:background="@color/com_white">
+
+            <ImageView
+                android:id="@+id/img_video_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/default_pic" />
+
+            <ImageView
+                android:id="@+id/img_play"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:scaleType="centerCrop"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_play"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_video_duration"
+                style="@style/text_fff12_style"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="5dp"
+                android:text="00:00"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_open_level"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/com_white"
+        android:paddingLeft="@dimen/com_border_margin"
+        android:paddingRight="@dimen/com_border_margin">
+
+        <TextView
+            style="@style/text_33315_style"
+            android:layout_centerVertical="true"
+            android:text="选择查看权限" />
+
+        <TextView
+            android:id="@+id/tv_open_level"
+            style="@style/text_66615_style"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_arrow_right"
+            android:text="公开" />
+
+        <ImageView
+            android:id="@+id/img_arrow_right"
+            style="@style/me_item_arrow_style"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</LinearLayout>
