@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			function UrlSearch() {
+			   var name,value;
+			   var str=location.href; //取得整个地址栏
+			   var num=str.indexOf("?")
+			   str=str.substr(num+1); //取得所有参数   stringvar.substr(start [, length ]
+		        console.log(str)
+			    window.location.href = 'stbox://searchfilter?'+str
+			    console.log('stbox://searchfilter?'+str)
+			   return 
+			}
+			
+			UrlSearch()
+			
+		</script>
+	</body>
+</html>
